@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+    <body id="JAbodyregistro">
+    
+    
+
+        <!-- base o container (como sea) -->
+         <div class="JAbase-registro">
+
+        <!-- el form dirige hacia la pagina principal-->
+        <form action="login.html">
+            <h1>Registro</h1>
+            
+               <!-- apartado(nombre) -->
+            <div class="JAnombre-correo-contraseña-confirmarcontraseña">
+            <input type="text" 
+            placeholder="Nombre Completo" required maxlength="20">
+            <i class='bx bx-user'></i>
+            </div>
+
+            <!-- apartado(correo electronico)-->
+            <div class="JAnombre-correo-contraseña-confirmarcontraseña">
+            <input type="email" 
+            placeholder="Correo Electrónico" required >
+            <i class='bx bx-envelope'></i>
+            </div>
+
+            <!-- apartado (contraseña)-->
+            <div class="JAnombre-correo-contraseña-confirmarcontraseña">
+                <input type="password" 
+                    placeholder="Contraseña" required maxlength="20">
+                        <i class='bx bx-lock-alt'></i>
+            </div>
+            
+                <!-- apartado (confirmacion de contraseña)-->
+                <div class="JAnombre-correo-contraseña-confirmarcontraseña">
+                    <input type="password" 
+                        placeholder="Confirmar Contraseña" required maxlength="20">
+                            <!-- icono-->
+                            <i class='bx bxs-key' ></i>
+                </div>
+
+                <!-- Boton de registro -->
+                <div>
+                    <a href=""><button type="submit"  class="JAregistro-boton">Registro</button></a>
+                </div>
+            
+            <!-- texto de abajo mi rey-->
+            <div class="JAtexto-abajo">
+             al registrase,acepta nuestras condiciones de uso y Politica de privacidad   
+            </div>
+        
+            <!-- conexion con apartado "inicio-sesion" -->
+            <div class="JAinicio-sesion-link">
+            <p>Tienes cuenta?<a href="login.html"> Inicia sesion</a> </p>
+            </div>
+        
+            </form>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1594 @@
+/* ------------------------------------------------------------ */
+            
+*{
+    box-sizing: border-box;
+}
+body{
+    /* background: linear-gradient(180deg, #000000 20%, #004105 45%, #008a0c 65%, #00ea2f 90%);
+    background-attachment: fixed;
+    height: 100%;
+    width: 100%;
+    height: 100vh; */
+    margin: 0px;
+    margin-bottom: 5px;
+    background-color: #0b0b0b;
+}
+                /* ---------------BODY----------------- */
+/* ---------------------------------------------------------------------- */
+                /* -------------CONTENIDO----------------- */
+div.FJ-fondouno{
+    background-image: url(../img/fondo2.jpg);
+    background-size: 100% 100%;
+    background-position: top center;
+    position: relative;
+    top: 0;
+    margin-top: 152px;
+    width: 100%;
+    height: 50em;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+}
+div.FJ-fondocontenido{
+    background-color: rgb(169, 169, 169);
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: 7000px;
+    position: relative;
+    top: 0px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+}
+.FJ-containeruno{
+    width: 100%;
+    height: 50em;
+    background-color: #40b74a;
+    position: static;
+    top: 0em;
+}
+                /* ----------CONTENIDO----------------- */
+/* ---------------------------------------------------------------------- */
+                /* -------------MENU----------------- */
+header.FJmenuprincipal *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+header.FJmenuprincipal{
+    width: 100%;
+    overflow: hidden;
+    height: 150px;
+    top: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+    display: block;
+    position:  fixed;
+    background-color: #ffffff;
+    justify-content: space-between;
+    background-size: 100% 100%;
+    z-index: 15;
+    background: linear-gradient(250deg, #000000 15%, #004105 55%, #008a0c 80%, #00ea2f 95%);
+}
+nav.FJnav{
+    position: relative;
+    top: .3em;
+    width: 78%;
+    display: flex;
+    max-height: 100%;
+    left: 1em;
+}
+div.FJlogodiv{
+    position: relative;
+    width: 15%;
+    height: 100%;
+    display: block;
+    float: right;
+    margin-right: 1.5em;
+}
+.FJlogohiddiv{
+    display: none;
+}
+.FJlogoimg{
+    width: 100%;
+    height: 100%;
+}
+.FJlogoimg:hover{
+    filter: drop-shadow(1px 2px 3px);
+    transition: all .2s ease-out;
+}
+nav.FJnav ul{
+    list-style: none;
+}
+nav.FJnav > ul{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    background-color: #001302;
+    border-radius:25px 25px 25px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    display: table;
+    max-height: 100%;    
+}
+/* nav.FJnav >  */
+.FJnav> ul > li{
+    display: table-cell;
+    align-items: center;
+}
+.FJnav> ul > li>ul>li{
+    display: table-cell;
+    align-items: center;
+}
+/* submenu */
+nav.FJnav> ul > li > ul{
+    display: table-cell;
+    position: absolute;
+    overflow: hidden;
+    height: 0%;
+    width: auto;
+    transition: all .3s ease .25s;
+    border-radius:0px 25px 25px 25px;
+}
+.FJ-sublistaproyectos{
+    background: #fcaf17;
+}
+.FJ-sublistaservicios{
+    background: #007aff;
+}
+.FJ-sublistaproductos{
+    background: #000000;
+    color: white;
+}
+nav.FJnav > ul > li:hover > ul{
+    display: block;
+    height: 100%;
+}
+nav.FJnav>ul li a{
+    color: #828282;
+    display: block;
+    line-height: 50px;
+    padding: 10px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    transition: all .3s ease;
+}
+nav.FJnav > ul > li > ul >li:hover{
+    background-color: #ffffff;
+    border-radius: 40px 40px 40px 40px;
+}
+nav.FJnav>ul>li>a span{
+    /* background: #174459; */
+    display: block;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    position: absolute;
+    top: -180px;
+    transition: all .3s ease;
+    /* line-height: 5px; */
+}
+nav.FJnav > ul > li > a:hover >span{
+    top: 0px;
+}
+/* colores */
+nav.FJnav ul li a span.FJ-primero {
+    background: #bbbbbb;
+}
+nav.FJnav > ul > li > a:hover >span.FJ-primero{
+    border-radius: 25px 25px 25px 25px;
+}
+nav.FJnav ul li a span.FJ-segundo {
+    background: #fcaf17;
+}
+nav.FJnav > ul > li > a:hover >span.FJ-segundo{
+    border-radius: 25px 25px 0px 0px;
+}
+nav.FJnav ul li a span.FJ-tercero {
+    background: #007aff;
+}
+nav.FJnav > ul > li > a:hover >span.FJ-tercero{
+    border-radius: 25px 25px 0px 0px;
+}
+nav.FJnav ul li a span.FJ-cuarto {
+    background: #000000;
+}
+nav.FJnav > ul > li > a:hover >span.FJ-cuarto{
+    border-radius: 25px 25px 0px 0px;
+}
+nav.FJnav ul li a span.FJ-quinto {
+    background: #FFFFFF;
+}
+nav.FJnav > ul > li > a:hover >span.FJ-quinto{  
+    border-radius: 25px 25px 25px 25px;
+}
+nav.FJnav ul li a span.FJ-sexto {
+    background: #FFFFFF;
+}
+nav.FJnav > ul > li > a:hover >span.FJ-sexto{ 
+    border-radius: 25px 25px 25px 25px;
+}
+nav.FJnav ul li a .FJ-septimo {
+    background: #00EA2F;
+}
+nav.FJnav > ul > li > a:hover >span.FJ-septimo{
+    border-radius: 25px 25px 25px 25px;
+}
+img.FJ-iconodos{
+    height: 100%;
+    border-radius: 25px 25px 0px 0px;
+}
+img.FJ-iconouno{
+    height: 100%;
+    border-radius: 25px 25px 25px 25px;
+}
+
+                        /* ----------MENU----------------- */
+/* ---------------------------------------------------------------------- */
+                /* -------------LISTA RESPONSIVE----------------- */
+.FJ-listaresponsive *{
+    box-sizing: border-box;
+}
+div.FJ-listaresponsive{
+    display: none;
+    align-items: center;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    height: 560px;
+    position: relative;
+    top: 0;
+    margin-top: 153px;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+    background: linear-gradient(125deg, #000000 15%, #004105 55%, #008a0c 80%, #00ea2f 95%);
+    background-size: 100% 100%;
+}
+nav.FJnavres{
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    display: block;
+    left: 0;
+    margin-left: auto;
+    right: 0;
+    margin-right: auto;
+}
+.FJ-listaresponsive>nav ul {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    font-family: Arial, sans-serif;
+    font-size: 11pt;
+    border-radius: 10px 10px 10px 10px;
+}
+.FJ-listaresponsive>nav ul li {
+    background-color: #001302;
+}
+.FJ-listaresponsive>nav ul li a {
+    color: #aeaeae;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    align-items: center;
+    text-align: center;
+    padding: 2em;
+}
+.FJ-listaresponsive>nav ul li a:hover {
+    background: #00860d;
+    color: #ffffff;
+    transition: all 0.3s ease;  
+}
+.FJ-listaresponsive>nav ul li{
+    width: 50%;
+    height: 80px;
+}
+.FJ-listaresponsive img{
+    height: 100%;
+    display: none;
+}
+.FJ-listaresponsive ul li ul {
+    display: none;
+}
+.FJ-listaresponsive ul li:hover >ul{
+    display: block;
+    left: 50%;
+    top: 0em;
+    position: absolute;
+}
+                /* ----------LISTA RESPONSIVE----------------- */
+/* ---------------------------------------------------------------------- */
+                /* -------------FOOTER----------------- */
+.FJ-footer *{
+    color: white;
+}
+.FJ-footer{
+    width: 100%;
+    height: 22em;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2em 5em 1em 5em;
+    background-color: #000000;
+    position: static;
+    bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+.FJ-footer>div{
+    display: flex;
+    width: 100%;
+    height: 5em;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+.FJ-footer>div>div{
+    width: 50%;
+    display: inline-block;
+    justify-content: space-between;
+}
+.FJ-footer>div>div>a{
+    margin-left: 1em;
+    margin-right: 1em;
+    text-decoration: none;
+    font-size: 1.4em;
+}
+.FJ-footer>div>div>span{
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.FJ-footer>div>div>a:hover{
+    transition: all .3s ease;
+    color: #00ea2f;
+    background-color: #ffffff;
+    padding: 5px 15px;
+    border-radius: 25px 25px 25px 25px;
+}
+.FJcenter{
+    text-align: center;
+}
+.FJright{
+    text-align: right;
+}
+.bt{
+    padding-left: 1em;
+    padding-right: 1em;
+}
+                /* -------------FOOTER-------------- */
+/* ---------------------------------------------------------------------- */
+                /* -------------RESPONSIVE----------------- */
+@media screen and (max-width:1000px){
+    header.FJmenuprincipal{
+        height: 26em;
+    }
+    nav.FJnav{
+        width: 95%;
+        top: 10em;
+    }
+    div.FJlogodiv{
+        display: none;
+    }
+    div.FJlogohiddiv{
+        display: block;
+        top: 0;
+        margin-top: -1em;
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 22em;
+        height: 12em;
+        position: absolute;
+    }
+    img.FJ-iconodos,img.FJ-iconouno{
+        width: 100%;
+        width: 100%;
+    }
+    div.FJ-fondouno{
+        top: 0;
+        margin-top: 26.3em;
+    }
+    .FJ-footer{
+        padding: 1em 2em 1em 2em;
+    }
+    header>nav li{
+        overflow: hidden;
+    }
+    header>nav>ul a{
+        height: 100%;
+    }
+    header>nav ul{
+        height: 100%;
+    }
+}
+@media screen and (max-width:640px){
+    div.FJ-listaresponsive{
+        display: flex;
+        top: 0;
+        margin-top: 14em;
+    }
+    nav.FJnav{
+        display: none;
+    }
+    div.FJlogohiddiv{
+        top: 0;
+        margin-top: .1em;
+        width: 80%;
+        height: 100%;
+    }
+    header.FJmenuprincipal{
+        height: 14em;
+    }
+    div.FJ-fondouno{
+        top: 0;
+        margin-top: .2em;
+    }
+    .FJ-footer{
+        padding: 1em 1em 1em 1em;
+    }
+    div.FJ-fondouno{
+        background-image: url(../img/fondo3.jpg);
+    }
+}
+                /* ----------RESPONSIVE----------------- */
+/* ---------------------------------------------------------------------- */
+                /* -------------PAGINA SERVICIOS----------------- */
+header.FJmenuprincipalserv{
+    background: linear-gradient(250deg, #000000 15%, #003c7b 45%, #0052aa 80%, #007aff 95%);
+}
+nav.FJnav > ul{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    background-color: #001302;
+    border-radius:25px 25px 25px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    display: table;
+    max-height: 100%;    
+}
+                /* ----------PAGINA SERVICIOS----------------- */
+/* ---------------------------------------------------------------------- */
+                /* ----------PAGINA PRODUCTOS----------------- */
+header.FJmenuprincipalprod{
+    background: linear-gradient(250deg, #000000 15%, #89600d 45%, #cf9216 80%, #fcaf17 95%);
+}
+nav.FJnav > ul{
+    position: relative;
+    width: 100%;
+    /* height: 100px; */
+    background-color: #001302;
+    border-radius:25px 25px 25px 25px;
+    font-size: 18px;
+    cursor: pointer;
+    display: table;
+    max-height: 100%;    
+}
+
+      /* <-----------------------------------------------DANIEL----------------------------------------------------> */
+
+.DPconfiguracion{
+    background-color: #0b0b0b;
+    background-size: 100%;
+    background-position: center;
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0px;
+    margin-top: 1em;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+}
+.DPconfiguraciondos{
+    background-color: black;
+    background-size: 100% 100%;
+    background-position: top center;
+    position: relative;
+    margin-top: 140px;
+    width: 100%;
+    height: 38em;
+    margin-left: auto;
+    margin-right: auto;
+    right: 0;
+    left: 0;
+}
+@font-face {
+    font-family: DPletra;
+    src: url(../font/Honk-Regular-VariableFont_MORF\,SHLN.ttf);
+}
+@font-face {
+    font-family: DPletra2;
+    src: url(../font/PatuaOne-Regular.ttf);
+}
+.DPcontainer{
+
+    max-width: 100vw;
+    margin: auto;
+    overflow: hidden;
+    padding: 0 20px;
+}
+.DPcaja{
+    padding: 20px;
+    /* background: url(../img/img1.jpg); */
+    width: 100%;
+    justify-content: center;
+}
+.DPimagenes{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.DPimagenes img{
+    width: 32%;
+    padding: 5px;
+    border-radius: 5px;
+}
+.DPcajaQS{
+    height: 100%;
+    margin: auto;
+    width: 90%;
+    border-radius: 15%;
+    padding: 1em;
+    color:  rgb(18, 1, 18);
+}
+.DPcajaQS p {
+    font-family: DPletra2;
+    font-size: 1em; 
+    line-height: 1.5; 
+    text-align: center;
+    color: white;
+}
+.DPtableuno {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    background-color: rgb(56, 13, 56); 
+    border-radius: 20%; 
+}
+.DPtitulo{
+    text-align: center;
+    margin: 20px 40px;
+    font-family: DPletra;
+    font-size: 7em;
+}
+.DPtd {
+    padding: 10px; 
+    text-align: center; 
+}
+#DPlinea1, #DPlinea2{
+    border-right: 2px solid white; 
+    text-align: center;
+    margin: auto;
+}
+
+.DPtableuno tr {
+    border-bottom: 2px solid white; 
+    justify-content: center;
+}
+.DPtableuno td{
+    width: 32%;
+}
+.DPestadisticasdiv p{
+    font-family: DPletra2;
+    font-size: 1rem;
+    line-height: 1.5; 
+    text-align: center;
+}
+.DPmisiondiv p{
+    padding: 90px;
+    font-family: DPletra2;
+    font-size: 1rem; 
+    line-height: 1.5; 
+    text-align: center;
+    color: white;
+}
+.DPimagenes img:hover{
+    box-shadow: 0 0 10px turquoise;
+}
+.DPtd:hover{
+    color: turquoise;
+}
+@media screen and (max-width: 576px)
+{
+.DPimagenes{
+  flex-direction: column;
+}
+.DPimagenes img{
+  width: 100%;
+  margin-bottom: 5px;
+}
+.DPimagenes img:nth-child(1), .imagenes img:nth-child(2) {
+  display: none; 
+}
+.DPtitulo {
+  font-size: 4em; 
+  margin-top: -1em;
+}
+.DPtableuno {
+  display: table; 
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 80%;
+}
+.DPtableuno tr {
+  display: table-row; 
+  margin-bottom: 10px; 
+  border-bottom: none;
+}
+.DPtd {
+  display: table-cell; 
+  padding: 10px 20px;
+}
+.DPtd p{
+  text-align: center;
+  margin: 0;
+}
+.DPmisiondiv p {
+  font-size: 1rem; 
+  margin-bottom: 15px; 
+}
+.DPconfiguracion {
+    margin-top: -1em;
+  }
+}
+.DPcontainer2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+}
+.DPcard {
+    position: relative;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    margin: 20px;
+    margin-bottom: 40px;
+}
+
+.DPcard img {
+    width: 100%;
+    height: auto;
+}
+
+.DPcard .DPcontent2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    box-sizing: border-box;
+    transition: bottom 0.3s ease;
+    font-size: 10px;
+}
+.DPcard1 {
+    transform: translateY(-20px);
+}
+
+.DPcard2 {
+    transform: translateY(-20px);
+}
+
+.DPcard3 {
+    transform: translateY(-20px);
+}
+
+.DPvertical-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    position: relative;
+    bottom: 12em;
+    width: 80%;
+    background-color: #00272d;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.DPcontent2 p{
+    font-family: DPletra2;
+}
+.DPvertical-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+}
+
+.DPvertical-menu li {
+    margin-right: 20px;
+}
+
+.DPvertical-menu li a {
+    font-size: 1.2em;
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #024778;
+    text-align: center;
+}
+.DPvertical-menu li:last-child {
+    margin-right: 0; 
+}
+.DPcard:hover .DPcontent2{
+    top: 100px;
+}
+.DPvertical-menu li a:hover {
+    background-color: #6e2c00;
+}
+.DPcard .DPcontent2:hover p{
+    color: turquoise;
+}
+
+@media screen and (max-width: 576px) {
+    .DPcontainer2 {
+        flex-direction: column;
+        align-items: center;
+    }
+    .DPvertical-menu {
+        width: 100%;
+        top: -4em;
+    }
+    .DPmenu-container {
+        flex-direction: column; 
+        align-items: center; 
+    }
+    .DPvertical-menu {
+        width: 100%;
+    }
+    .DPvertical-menu ul{
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .DPvertical-menu li{
+        margin-right: 0;
+    }
+    .DPimages {
+        order: 1; 
+    }
+    .DPcard {
+        width: calc(100% - 20px); 
+        margin-top: 50px;
+    }
+    .DPcard3{
+        margin-top: -40px;
+    }
+    .DPcard1{
+        margin-top: -40px;
+    }
+    .DPcard .DPfront{
+        max-width: 100%;
+        height: auto;
+    }
+    .DPcard .DPcontent p{
+        color: turquoise;
+    }
+    .DPcard:nth-child(1) {
+        order: 3; 
+    }
+    .DPcard:nth-child(3) {
+        order: 1; 
+    }
+    .DPconfiguraciondos{
+        margin-top: -3.5em;
+        height: 100em;
+    }
+
+}
+/* <-----------------------------------------------DANIEL----------------------------------------------------> */
+
+/* <--------------------------------------------JOSE_ANTONIO-------------------------------------------------> */
+      
+/* aqui establecemos el fondo de las paginas y sus modificaciones generales */
+#JAbodylogin{
+    font-family: sans-serif;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/R.gif);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+
+    
+}
+
+/* base de la pagina login y sus posicionamientos */
+.JAbase{
+  
+    box-sizing: border-box;
+    width: 400px;
+    background-color: rgba(0, 0, 0, 0.615);
+    color: white;
+   border-radius: 20px;
+   padding: 90px 90px;
+   border:none;
+   box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.783);
+
+}
+
+
+/* Titulo que va encima del login */
+.JAbase h1{
+    font-size: 36px;
+    text-align: center;
+}
+
+/* Casillas del formulario */
+.JAbase .JAcasilla-usuario-contraseña{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-radius:40px ;
+    border: none;
+    border: 2px solid rgb(218, 218, 218);
+   
+  
+}
+
+/* la parte interna de las casillas  */
+.JAcasilla-usuario-contraseña input {
+
+    width: 80%;
+    height: 20%;
+    background: transparent;
+    border: none;
+    outline: none ;
+    font-size: 17px;
+    text-align: center;
+    padding: 20px 45px 20px 20px;
+    color: #ffffff;
+    
+}
+
+/* aqui se establece el color del texto que sale antes de escribir en el formulario */
+.JAcasilla-usuario-contraseña input::placeholder{
+
+    color: #ffffff;
+}
+
+/* posicionamiento de los iconos de login */
+.JAcasilla-usuario-contraseña i{
+
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+
+
+}
+
+/* espaciado y posicion del texto y su conexion  */
+.JArecuerdame {
+    display: flex;
+    justify-content: space-around;
+    font-size: 13px;
+    padding: 17px;
+
+}
+
+/* este apartado */
+.JArecuerdame  label input{
+
+    accent-color: #00ff1a;
+    cursor: pointer;
+    
+
+}
+
+.JArecuerdame  a {
+
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding-top: 3px;
+
+}
+
+.JArecuerdame a:hover{
+    text-decoration: underline;
+    color: #00ff1a;
+}
+
+.JAbase .JAboton{
+    width: 100%;
+    height: 45px;
+    background-color: #00ea1f;
+    border: none;
+    outline: none;
+    border-radius:40px ;
+    font-size: 19px;
+    cursor: pointer;
+    margin: 10px 0;
+  
+    color: #000000;
+    border-color: #00ea1f;
+}
+
+.JAregistro-link p{
+    margin: 30px;
+    text-align: center;
+    font-weight: 600;
+    
+   
+    
+}
+
+.JAregistro-link a{
+
+            text-decoration: none;
+            color: #ffffff;
+}
+
+.JAregistro-link p a:hover{
+
+    text-decoration: underline;
+    color: #00ff1a;
+}
+
+.JAboton:hover{
+
+    color: #00ea1f;
+    background-color: #000000;
+    border-style: outset;
+    border-color: #00ea1f;
+}
+
+/* _______________________________________________REGISTRO__________________________________________ */
+
+/* BASE DE REGISTRO*/
+
+#JAbodyregistro{
+    font-family: sans-serif;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/R.gif);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    
+}
+
+
+.JAbase-registro{
+    margin: 0px;
+
+    box-sizing: border-box;
+   width: 420px;
+   background-color: rgba(0, 0, 0, 0.615);
+   color: white;
+  border-radius: 20px;
+  padding: 30px 40px ;
+  border:none;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, 0.783);
+}
+
+/* TITULO DE REGISTRO */
+
+.JAbase-registro h1{
+
+    text-align: center;
+}
+
+/* CASILLAS DE LOS NOMBRES QUE SE PRESENTAN EN LA CLASE */
+.JAnombre-correo-contraseña-confirmarcontraseña {
+
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    border-radius:40px ;
+    border: none;
+    border: 2px solid rgb(254, 254, 254);
+}
+
+
+
+/* PARTE INTERNA DE LAS CASILLAS (NOMBRE COMPLETO, CORREO ,ETC.) */
+.JAnombre-correo-contraseña-confirmarcontraseña input{
+
+    height: 10%;
+    width: 70%;
+    border-radius: 10px;
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 20px 50px 30px 60px;
+    font-size: 17px;
+   
+
+    
+}
+
+
+/* APARTADO PARA CAMBIAR DE COLOR (REGISTRO)*/
+.JAnombre-correo-contraseña-confirmarcontraseña input::placeholder{
+    color: #ffffff;
+}
+
+/* POSICIONAMIENTO DE ICONOS DE REGISTRO */
+.JAnombre-correo-contraseña-confirmarcontraseña i{
+
+    position: absolute;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    font-size: 20px;
+    
+}
+
+/* TEXTO DE ACEPTACION DE USO Y CONDICIONES */
+.JAtexto-abajo{
+
+    justify-content: none ;
+    text-align: center;
+    padding-bottom: 10%;
+}
+
+
+/* TEXTO DE CONEXION HACIA LA PAGINA DE INICIO DE SESION  */
+.JAinicio-sesion-link a{
+
+    color: #fdfdfd;
+    text-decoration: none;
+}
+
+/* TEXTO DE CONEXION HACIA LA PAGINA DE INICIO DE SESION */
+.JAinicio-sesion-link{
+    
+    text-align: center;
+}
+
+/* Bue este hover hace la funcion de mostrar la "underline" cuando se posiciona el cursor encima de este */
+.JAinicio-sesion-link a:hover{
+
+    color: #00ea1f;
+    text-decoration: underline;
+    
+}
+
+/* boton de registro */
+.JAregistro-boton{
+
+    width: 100%;
+    height: 45px;
+    border-radius: 20px;
+    margin: 0 0 30px ;
+    border: none;
+    outline: none;
+    background-color: #00ea1f;
+    font-size: 19px;
+    cursor: pointer;
+    color: #000000;
+}
+
+/* Bue este hover hace la funcion de mostrar el boton de diferente color cuando se posiciona el cursor encima de este   */
+.JAregistro-boton:hover{
+
+    color: #00ea1f;
+    background-color: #000000;
+    border-style: outset;
+    border-color: #00ea1f;
+}
+
+
+
+
+
+
+
+/* ---------------------------------contacto------------------------ */
+
+#JAbodycontacto{
+    font-family: sans-serif;
+    display: flex ;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../img/R.gif);
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    margin-top: 100px;
+ 
+}
+
+
+/* esta etiqueta sirve para enviar informacion a un sitio web
+    la use como base */
+
+form{
+     
+    padding: 50px 55px;
+   
+    border-radius: 20px;
+    text-align: center;
+    width: 400px;
+
+}
+
+/* esto es el contenido, le agregue el display felex para que se adaptara */
+
+.JAcontenidocontacto{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: transparent;
+    border-radius: 10px;
+    box-shadow: 0 0 30px 0 #00000041;
+    
+    
+    
+}
+
+/* titulo de contactos */
+h1{
+    font-size: 35px;
+    color: #ffffff;
+    margin-bottom: 50px;
+}
+
+
+/* aqui estableci la distania y tamaño de los nombres para que estuvieran mas separados */
+.JAcontenidocontacto label{
+
+    font-size: 15px;
+    margin-bottom: 15px;
+    
+    color: #ffffff;
+}
+
+/* esta es la parte del text area, le modifique sus espaciados  */
+
+.JAcontenidocontacto input, textarea{
+    padding: 17px 25px;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #40a100;
+    border: 2px solid;
+    
+
+}
+
+.JAcontenidocontacto textarea::placeholder{
+
+    color: rgb(255, 255, 255);
+}
+
+
+.JAcontenidocontacto input::placeholder{
+
+    color: #ffffff;
+}
+
+.JApoliticacontactos{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+
+}
+
+.JApoliticacontactos a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+
+}
+
+
+.JAbotonenviarcontactos{
+
+    font-size: 17px;
+    color: #fdfdfd;
+
+}
+
+.JAbotonenviarcontactos:hover{
+
+    background-color: #000000;
+    color: #09ab19;
+}
+
+a:hover{
+    text-decoration: underline;
+    color: #00ff1a;
+}
+
+@media screen and (max-width:576px){
+    #JAbodycontacto{
+        margin-top: -20px;
+    }
+    .FJ-footer{
+        display: none;
+    }
+    .JAbodyjuegos{
+        margin-top: -100px;
+    }
+}
+/* --------------------------------------------------------------apartado juegos----------------------------------------------------------------------- */
+
+.JAbodyjuegos{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    align-items: center;
+    background-color: #000000;
+    margin-top: 100px;
+
+
+}
+
+.JAjuegostitulo h2{
+    padding: 20px;
+    color: #ffffff;
+
+}
+
+.JAcontenidocaja1 li{
+
+    list-style: none;
+}
+
+.JAcontenidocaja1 nav{
+
+    display: grid;
+    background-color: #00ea1f ;
+    place-items: center;
+}
+
+
+.JAcontenidocaja1 nav ul li{
+
+    display: inline-block;
+    padding: 20px;
+   
+}
+
+.JAcontenidocaja1 a{
+
+    text-decoration: none;
+    color: white;
+    transition: .7s;
+    font-weight: 900;
+    font-size: 19px;
+}
+
+.JAcontenidocaja1 a:hover{
+
+    
+    color: #000000;
+    transition: .7s;
+   
+}
+
+.JAcontenidocaja2{
+
+    display: grid;
+    display: inline-block;
+    padding: 30px 20px;
+  
+    
+   
+}
+
+
+.JAjuegos button{
+
+    background-color: #ffffff;
+    border: solid outset;
+    font-size: 30px;
+    cursor: pointer;
+    color: rgb(0, 0, 0);
+
+}
+
+.JAjuegos button:hover{
+
+    background-color: #00ff1a;
+    color: #151515;
+}
+
+
+
+.JAjuegos h4{
+
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+  
+}
+
+
+
+.JAjuegostitulo2 h2{
+    padding: 40px;
+    color: #ffffff;
+    background-color: #00ea1f;
+
+}
+
+.JAcontenedor-juegos-de-la-semana{
+    width: 100%;
+    display: flex;
+    max-width: 1500px;
+    justify-content: center;
+    
+    
+}
+
+.JAbase-juegos-semana{
+
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: #00ea1f;
+    justify-content: center;
+    transition: .1s;
+}
+
+.JAbase-juegos-semana:hover{
+
+    box-shadow: 0 0 30px 0 #fdfdfd;
+    transform: translateY(-4px);
+}
+
+
+
+.JAbase-juegos-semana img{
+    width: 100%;
+    height: 190px;
+}
+
+.JAbase-juegos-semana .JAcontenido-juegos-semana{
+
+    text-align: center;
+    padding: 10px;
+}
+
+.JAcontenido-juegos-semana p{
+    color: white;
+    line-height: 2;
+}
+
+.JAcontenido-juegos-semana a{
+
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    border: outset;
+    background-color: #fdfdfd
+    
+
+}
+
+.JAcontenido-juegos-semana a:hover{
+    background-color: #000000;
+    text-decoration: underline;
+    color: #00ea1f;
+    transition: .2s;
+}
+
+/* <--------------------------------------------JOSE_ANTONIO-------------------------------------------------> */
+
+/* <-------------------------------------------JOSE_FRANCISCO-------------------------------------------------> */
+body.FJbody-proy{
+    font-size: large;
+    color: white;
+}
+header.FJmenuprincipalproy{
+    background: linear-gradient(250deg, #000000 15%, #89600d 45%, #cf9216 80%, #fcaf17 95%);
+}
+header.FJmenuprincipalproy>nav.FJnavproy > ul{
+    background-color: #342404;
+}
+div.FJ-listaresponsiveproy{
+    background: linear-gradient(125deg, #000000 15%, #89600d 45%, #cf9216 80%, #fcaf17 95%);
+}
+div.FJ-listaresponsiveproy>nav ul li a:hover {
+    background: #fcaf17;
+    color: #ffffff;
+}
+div.FJ-listaresponsiveproy>nav ul li {
+    background-color: #342404;
+}
+div.FJ-proy-container *{
+    box-sizing: border-box;
+}
+div.FJ-proy-container h1{
+    text-align: center;
+    margin-top: 4em;
+    margin-bottom: .5em;
+    filter: drop-shadow(5px 20px 15px);
+    color: #fcaf17;
+}
+div.FJ-proy-container h1:hover{
+    transition: all .3s ease;
+    transform: translateX(3em) scale(1.3);
+    padding: 10px 10px;
+}
+
+div.FJ-proy-container h2,div.FJ-proy-container h3{
+    text-align: center;
+    color: #fcaf17;
+}
+div.FJ-proy-container h2:hover,div.FJ-proy-container h3:hover{
+    transition: all .3s ease;
+    transform: scale(1.1);
+    color: #000000;
+    background-color: #fcaf17;
+    padding: 5px 15px;
+    border-radius: 25px 25px 25px 25px;
+}
+div.FJ-proy-container{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20px auto;
+    width: 70%;
+    margin-top: 7em;
+    margin-bottom: 5em;
+    
+    /* background-color: #000; */
+}
+.FJ-proy-header{
+    align-items: center;
+    display: flex;
+}
+div.FJ-proy-container main{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 3em;
+    padding: 3em 4em;
+    border-radius: 15px 15px 15px 15px;
+    box-shadow: 0px 15px 30px #342404;
+    border: 1px solid #fcaf17;
+}
+div.FJ-proy-container p{
+    text-align: left;
+}
+div.FJ-proy-container p:hover{
+    transform: translateX(5px) scale(1.1);
+    transition: all 0.5s ease;
+    color: #fcaf17;
+}
+
+div.FJ-proy-container main> section{
+    width: 50%;
+    padding: 2em;
+    top: 0;
+    bottom: 0;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+div.FJ-proy-container section.FJ-proy-images{
+    flex-wrap: wrap;
+}
+div.FJ-proy-container section.FJ-proy-images img{
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
+    top: 0;
+    bottom: 0;
+}
+div.FJ-proy-container section>div.FJ-proy-masterchiefdiv{
+    height: 100%;
+    margin-top: 6em;
+    margin-bottom: 6em;
+    zoom: 1;
+}
+div.FJ-proy-container section img:hover{
+    transform: scale(1.1);
+    transition: all 0.4s linear;
+}
+div.FJ-proy-container section.FJ-proy-imagesuno{
+    order: 2;
+}
+div.FJ-proy-container section.FJ-proy-main_textuno{
+    order: 1;
+}
+div.FJ-proy-container section.FJ-proy-imagesdos{
+    order: 1;
+}
+div.FJ-proy-container section.FJ-proy-main_textdos{
+    order: 2;
+}
+div.FJ-proy-container video{
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+    z-index: -1;
+}
+div.FJ-proy-container .FJ-proy-videoengine{
+    padding: 0;
+    position: relative;
+    background: none;
+}
+body.FJbody-proy>.FJ-footer>div>div>a:hover{
+    transition: all .3s ease;
+    color: #000000;
+    background-color: #fcaf17;
+    padding: 5px 15px;
+    border-radius: 25px 25px 25px 25px;
+}
+
+@media screen and (max-width:992px){
+    div.FJ-proy-container{
+        width: 90%;
+        margin-top: 20em;
+        margin-bottom: 3em;
+    }
+    div.FJ-proy-container main{
+        padding: 2em;
+    }
+    div.FJ-proy-container section>div.FJ-proy-masterchiefdiv{
+        height: 100%;
+        margin-top: 2em;
+        margin-bottom: 2em;   
+    }
+}
+@media screen and (max-width:650px){
+    div.FJ-proy-container section.FJ-proy-main_text, div.FJ-proy-container section.FJ-proy-images{
+        width: 100%;
+    }
+    div.FJ-proy-container section.FJ-proy-images img{
+        width: 100%;
+        height: 100%;
+    }
+    div.FJ-proy-container{
+        width: 95%;
+        margin-top: -3em;
+        margin-bottom: 3em;
+    }
+    div.FJ-proy-container section.FJ-proy-imagesdos{
+        order: 2;
+    }
+    div.FJ-proy-container section.FJ-proy-main_textdos{
+        order: 1;
+    }
+    div.FJ-proy-container main{
+        padding: 1em;
+    }
+    div.FJ-proy-container section>div.FJ-proy-masterchiefdiv{
+        height: 100%;
+        margin-top: 1em;
+        margin-bottom: 1em;
+    }
+}
+
+/* <-------------------------------------------JOSE_FRANCISCO-------------------------------------------------> */
+
+@media screen and (max-width:576px){
+    .FJ-footer{
+        display: none;
+    }
+    .JAbodyjuegos{
+        margin-top: -100px;
+    }
+}
